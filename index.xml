@@ -1,31 +1,79 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Shagun Agarwal on Shagun Agarwal Title</title>
+    <title>Shagun Agarwal</title>
     <link>https://shagun751.github.io/</link>
-    <description>Recent content in Shagun Agarwal on Shagun Agarwal Title</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://shagun751.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent content on Shagun Agarwal</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; {year}</copyright>
+    <lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://shagun751.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
-      <title>About</title>
-      <link>https://shagun751.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>https://shagun751.github.io/talk/</link>
+      <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
       
-      <guid>https://shagun751.github.io/about/</guid>
-      <description>About Me  This is a Hugo based resume template. You can find the full source code on GitHub.
-Research Interest Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam finibus ipsum ac erat aliquam dapibus. Vestibulum vehicula placerat ex, a consectetur odio pharetra quis1. Mauris id urna ante.
-Fusce pharetra diam ac nisi aliquet, velegestas ex iaculis. Pellentesque laoreet cursus tellus sed pellentesque. Praesent a rhoncus elit2. Nunc ipsum nisl, consequat sit amet pretium quis, gravida id ipsum.</description>
+      <guid>https://shagun751.github.io/talk/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Contact</title>
-      <link>https://shagun751.github.io/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Publications</title>
+      <link>https://shagun751.github.io/publication/</link>
+      <pubDate>Tue, 30 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://shagun751.github.io/contact/</guid>
-      <description> Email: foo@xyz.com Phone: +91-123123   Mailing Address  221B, Baker Street
-London
-United Kingdom
-  Social  Facebook Twitter Google+  </description>
+      <guid>https://shagun751.github.io/publication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Courses</title>
+      <link>https://shagun751.github.io/courses/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://shagun751.github.io/courses/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Posts</title>
+      <link>https://shagun751.github.io/post/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://shagun751.github.io/post/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Slides</title>
+      <link>https://shagun751.github.io/slides/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://shagun751.github.io/slides/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>https://shagun751.github.io/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      
+      <guid>https://shagun751.github.io/privacy/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://shagun751.github.io/project/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://shagun751.github.io/project/</guid>
+      <description></description>
     </item>
     
   </channel>
