@@ -20,4 +20,5 @@ menu:
     name: YourParentID
     # parent: YourParentID
     weight: 1
+
 ---
