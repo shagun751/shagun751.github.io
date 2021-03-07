@@ -32,6 +32,12 @@
     <loc>https://shagun751.github.io/authors/</loc>
     <lastmod>2021-03-30T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://shagun751.github.io/tags/boussinesq/</loc>
+    <lastmod>2021-03-06T19:56:40+05:30</lastmod>
+  </url><url>
+    <loc>https://shagun751.github.io/tags/mlpg/</loc>
+    <lastmod>2021-03-30T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://shagun751.github.io/talk/coding/</loc>
     <lastmod>2021-03-06T19:56:40+05:30</lastmod>
   </url><url>
@@ -62,9 +68,6 @@
     <loc>https://shagun751.github.io/authors/k.-murali/</loc>
     <lastmod>2021-03-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://shagun751.github.io/tags/mlpg/</loc>
-    <lastmod>2021-03-30T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://shagun751.github.io/publication_types/</loc>
     <lastmod>2021-03-30T00:00:00+00:00</lastmod>
   </url><url>
@@ -74,11 +77,26 @@
     <loc>https://shagun751.github.io/authors/shiqiang-yan/</loc>
     <lastmod>2021-03-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://shagun751.github.io/privacy/</loc>
+    <loc>https://shagun751.github.io/tags/arduino/</loc>
+    <lastmod>2021-03-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shagun751.github.io/project/</loc>
     <lastmod>2021-03-06T19:56:40+05:30</lastmod>
   </url><url>
-    <loc>https://shagun751.github.io/tags/boussinesq/</loc>
-    <lastmod>2021-03-04T00:00:00+00:00</lastmod>
+    <loc>https://shagun751.github.io/tags/prototype/</loc>
+    <lastmod>2021-03-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shagun751.github.io/tags/raspberry-pi/</loc>
+    <lastmod>2021-03-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shagun751.github.io/tags/robotics/</loc>
+    <lastmod>2021-03-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shagun751.github.io/project/rover/</loc>
+    <lastmod>2021-03-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shagun751.github.io/privacy/</loc>
+    <lastmod>2021-03-06T19:56:40+05:30</lastmod>
   </url><url>
     <loc>https://shagun751.github.io/project/bsnq-base/</loc>
     <lastmod>2021-03-04T00:00:00+00:00</lastmod>
@@ -94,9 +112,6 @@
   </url><url>
     <loc>https://shagun751.github.io/tags/numerical/</loc>
     <lastmod>2021-03-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://shagun751.github.io/project/</loc>
-    <lastmod>2021-03-06T19:56:40+05:30</lastmod>
   </url><url>
     <loc>https://shagun751.github.io/post/jupyter/</loc>
     <lastmod>2021-03-06T19:56:40+05:30</lastmod>
@@ -137,9 +152,6 @@
     <loc>https://shagun751.github.io/authors/admin/</loc>
     <lastmod>2021-03-06T19:56:40+05:30</lastmod>
   </url><url>
-    <loc>https://shagun751.github.io/tags/arduino/</loc>
-    <lastmod>2021-03-06T19:56:40+05:30</lastmod>
-  </url><url>
     <loc>https://shagun751.github.io/categories/</loc>
   </url><url>
     <loc>https://shagun751.github.io/courses/</loc>
@@ -148,22 +160,10 @@
     <loc>https://shagun751.github.io/post/</loc>
     <lastmod>2021-03-06T19:56:40+05:30</lastmod>
   </url><url>
-    <loc>https://shagun751.github.io/tags/prototype/</loc>
-    <lastmod>2021-03-06T19:56:40+05:30</lastmod>
-  </url><url>
     <loc>https://shagun751.github.io/publication/</loc>
     <lastmod>2021-03-06T19:56:40+05:30</lastmod>
   </url><url>
-    <loc>https://shagun751.github.io/tags/raspberry-pi/</loc>
-    <lastmod>2021-03-06T19:56:40+05:30</lastmod>
-  </url><url>
     <loc>https://shagun751.github.io/talk/</loc>
-    <lastmod>2021-03-06T19:56:40+05:30</lastmod>
-  </url><url>
-    <loc>https://shagun751.github.io/tags/robotics/</loc>
-    <lastmod>2021-03-06T19:56:40+05:30</lastmod>
-  </url><url>
-    <loc>https://shagun751.github.io/project/robotics/</loc>
     <lastmod>2021-03-06T19:56:40+05:30</lastmod>
   </url>
 </urlset>

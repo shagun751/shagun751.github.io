@@ -13,6 +13,24 @@
     
     
     <item>
+      <title>Boussinesq</title>
+      <link>https://shagun751.github.io/tags/boussinesq/</link>
+      <pubDate>Tue, 01 Jun 2021 13:00:00 +0000</pubDate>
+      
+      <guid>https://shagun751.github.io/tags/boussinesq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MLPG</title>
+      <link>https://shagun751.github.io/tags/mlpg/</link>
+      <pubDate>Tue, 01 Jun 2021 13:00:00 +0000</pubDate>
+      
+      <guid>https://shagun751.github.io/tags/mlpg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Seminar</title>
       <link>https://shagun751.github.io/tags/seminar/</link>
       <pubDate>Tue, 01 Jun 2021 13:00:00 +0000</pubDate>
@@ -31,15 +49,6 @@
     </item>
     
     <item>
-      <title>MLPG</title>
-      <link>https://shagun751.github.io/tags/mlpg/</link>
-      <pubDate>Tue, 30 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://shagun751.github.io/tags/mlpg/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Publications</title>
       <link>https://shagun751.github.io/tags/publications/</link>
       <pubDate>Tue, 30 Mar 2021 00:00:00 +0000</pubDate>
@@ -49,11 +58,38 @@
     </item>
     
     <item>
-      <title>Boussinesq</title>
-      <link>https://shagun751.github.io/tags/boussinesq/</link>
-      <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
+      <title>Arduino</title>
+      <link>https://shagun751.github.io/tags/arduino/</link>
+      <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://shagun751.github.io/tags/boussinesq/</guid>
+      <guid>https://shagun751.github.io/tags/arduino/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Prototype</title>
+      <link>https://shagun751.github.io/tags/prototype/</link>
+      <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://shagun751.github.io/tags/prototype/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi</title>
+      <link>https://shagun751.github.io/tags/raspberry-pi/</link>
+      <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://shagun751.github.io/tags/raspberry-pi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Robotics</title>
+      <link>https://shagun751.github.io/tags/robotics/</link>
+      <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://shagun751.github.io/tags/robotics/</guid>
       <description></description>
     </item>
     
@@ -108,42 +144,6 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>https://shagun751.github.io/tags/academia/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Arduino</title>
-      <link>https://shagun751.github.io/tags/arduino/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://shagun751.github.io/tags/arduino/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Prototype</title>
-      <link>https://shagun751.github.io/tags/prototype/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://shagun751.github.io/tags/prototype/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Raspberry Pi</title>
-      <link>https://shagun751.github.io/tags/raspberry-pi/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://shagun751.github.io/tags/raspberry-pi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Robotics</title>
-      <link>https://shagun751.github.io/tags/robotics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://shagun751.github.io/tags/robotics/</guid>
       <description></description>
     </item>
     
