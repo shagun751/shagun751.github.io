@@ -440,7 +440,9 @@
 
   <div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
 
-  
+  <div class="row">
+    <div class="col-lg-8 mx-lg-auto text-left align-self-center">
+      
 
 
 
@@ -655,17 +657,23 @@
     </div>
   </div>
 </div>
+    </div>
+  </div>
 
   <div class="article-container">
 
-    
-    <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">This paper presents new developments in meshless local Petrov-Galerkin with Rankine source (MLPG_R) particle based method for studying interaction of waves with fixed structures in a numerical wave-tank. A new 3D formulation of the Lagrangian flow problem for incompressible fluid with optimised solution strategy is presented. The pressure Poisson equation is solved in local weak-form with integration done semi-analytically using a new symmetric expression. The wave-generation is done using one-way coupling with a 2D fully-nonlinear potential theory based finite-element model. Further a simple identification method for free-surface particles is proposed, which is shown to work well in vicinity of the structure. The solid-wall boundary condition is treated using ghost and mirror particles for accurate calculation of gradients. The waterline on domain boundary faces is treated using a tangentially moving side-wall approach which makes this particle based scheme capable of capturing small amplitude waves and focusing waves. The paper briefly presents experimental setup used for studying the interaction of a fixed emergent cylinder with uni-directional regular and focusing waves in 3D. The numerical model is validated against results from this experiment. An analysis is conducted on parameters related to local integration domain, wave-making coupling algorithm, particle distribution and time-step. This work highlights the use of hybrid approach for efficient and accurate simulation of waves-structure interaction.</p>
-    
+    <div class="row">
+      <div class="col-lg-8 mx-lg-auto text-left align-self-center">
+        
+        <h3>Abstract</h3>
+        <p class="pub-abstract" itemprop="text">This paper presents new developments in meshless local Petrov-Galerkin with Rankine source (MLPG_R) particle based method for studying interaction of waves with fixed structures in a numerical wave-tank. A new 3D formulation of the Lagrangian flow problem for incompressible fluid with optimised solution strategy is presented. The pressure Poisson equation is solved in local weak-form with integration done semi-analytically using a new symmetric expression. The wave-generation is done using one-way coupling with a 2D fully-nonlinear potential theory based finite-element model. Further a simple identification method for free-surface particles is proposed, which is shown to work well in vicinity of the structure. The solid-wall boundary condition is treated using ghost and mirror particles for accurate calculation of gradients. The waterline on domain boundary faces is treated using a tangentially moving side-wall approach which makes this particle based scheme capable of capturing small amplitude waves and focusing waves. The paper briefly presents experimental setup used for studying the interaction of a fixed emergent cylinder with uni-directional regular and focusing waves in 3D. The numerical model is validated against results from this experiment. An analysis is conducted on parameters related to local integration domain, wave-making coupling algorithm, particle distribution and time-step. This work highlights the use of hybrid approach for efficient and accurate simulation of waves-structure interaction.</p>
+        
+      </div>
+    </div>
 
     
     <div class="row">
-      <div class="col-md-10 mx-auto">
+      <div class="col-md-6 mx-auto">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Type</div>
           <div class="col-12 col-md-9">
@@ -685,7 +693,7 @@
     
     <div class="row">
       <div class="col-md-1"></div>
-      <div class="col-md-10">
+      <div class="col-md-6 mx-auto">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
           <div class="col-12 col-md-9">Computers and Fluids, 218</div>
@@ -698,8 +706,11 @@
 
     <div class="space-below"></div>
 
-    <div class="article-style"><!-- raw HTML omitted -->
+    <div class="row">
+      <div class="col-lg-8 mx-lg-auto text-left align-self-center">
+        <div class="article-style"><!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
+<p>The paper presented a detailed new 3D formulation of the solution procedure for Navier-Stokes equation for incompressible Lagrangian flow problem using MLPG. The existing MLPG_R scheme with it Petrov–Galerkin formulation using Rankine source had the significant advantage of removing gradient operations from the unknown quantity. This paper has additionally provided the derivation of a semi-analytical integration technique with a symmetric expression (MLPG_RS) and has quantified the associated error. A detailed analysis of the influence of the integration domain radius on the stability and accuracy of the solution was conducted to understand the integration method error. Based on this, we have prescribed the radius of the support domain and the integration domain.</p>
 
 
 
@@ -719,10 +730,14 @@
 
 </figure>
 
+<p>A detailed algorithm was presented for coupling of 2D FNPT-FEM with the 3D MLPG_RS method. This hybrid approach was used as the wave-making condition, which limited the need for 3D domain to the vicinity of the cylinder. It allowed us to significantly reduce the 3D computational domain and number of time-steps, and has improved the overall computational efficiency of the model. A detailed analysis was done to identify the appropriate size of overlapping zone between the 2D and the 3D domain for solitary, regular and focusing waves. The paper presents minimum overlapping zone length criterion for successful coupling. We were able to use the strength of potential flow model in accurate wave-generation and propagation over long distances, due to which the wave reaching the cylinder was highly accurate and resulted in excellent agreement of numerical pressure probe signals with the experiments.</p>
+<p>We have demonstrated the issue of mis-identification of free-surface particles in the vicinity of the cylinder with the existing scheme and have provided a simple alternative technique instead. A moving wall algorithm was presented to capture the waterline on side-wall faces. It enabled the model to capture small amplitude waves and thus made it possible to accurately replicate a focusing wave. We briefed upon the other improvements in application of rigid wall boundary condition, particle collision and redistribution. The collective result of these modifications was demonstrated through pressure probe signal comparison, highlighting the improvements in the accuracy and the stability.</p>
+<p>MLPG_RS has the strength of simulating complex flows using relatively lesser number of nodes in comparison to other particle based schemes. This was demonstrated through the mesh and time-step convergence study in this paper. We highlighted the capabilities through excellent comparison of pressure for probes located outside the initial water level. We have also conducted a mesh and time-step convergence study and have demonstrated the suitable range of parameters for interaction of waves with fixed structures. This work has set the basis for further developments in MLPG towards 3D simulation of moving and floating bodies. The hybrid modelling approach will be extended to further reduce the computational domain by shifting the absorbing layer to a potential flow model. Such developments can help bring particle based schemes in the mainframe.</p>
+<p>The present manuscript has presented and validated a baseline laminar 3D MLPG model. The complex cases of interaction of cylinder with banded steep focusing wave helped us identify issues with the model which may be hidden under the noise of breaking waves. Therefore, with the confidence in the improvements presented in this manuscripts we will present a detailed study on breaking waves in 3D using MLPG in our future work.</p>
 <p>Supplementary notes can be added here, including <a href="https://sourcethemes.com/academic/docs/writing-markdown-latex/">code and math</a>.</p>
 </div>
 
-    
+        
 
 <div class="article-tags">
   
@@ -735,47 +750,13 @@
 </div>
 
 
-    
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-  
-
-
-
-
-
-  
-  
-  
-  
-  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
-    
-
-    <div class="media-body">
-      <h5 class="card-title" itemprop="name"><a href="https://shagun751.github.io/authors/shagun-agarwal/"></a></h5>
-      
-      
-      <ul class="network-icon" aria-hidden="true">
         
-      </ul>
+      </div>
     </div>
-  </div>
-
-
-
 
   </div>
 </div>
+
 
 
 
@@ -889,6 +870,44 @@
   
   <div class="container">
     <footer class="site-footer">
+  
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="https://shagun751.github.io/authors/shagun-agarwal/"></a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
+        
+      </ul>
+    </div>
+  </div>
+
+
+
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-6 mb-4 mb-md-0">
