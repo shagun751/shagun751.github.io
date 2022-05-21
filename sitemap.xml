@@ -29,6 +29,30 @@
     <loc>https://shagun751.github.io/courses/example.1/example4/</loc>
     <lastmod>2021-03-06T19:56:40+05:30</lastmod>
   </url><url>
+    <loc>https://shagun751.github.io/project/cbs-external/</loc>
+    <lastmod>2022-05-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shagun751.github.io/tags/fem/</loc>
+    <lastmod>2022-05-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shagun751.github.io/tags/numerical/</loc>
+    <lastmod>2022-05-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shagun751.github.io/tags/other/</loc>
+    <lastmod>2022-05-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shagun751.github.io/project/</loc>
+    <lastmod>2022-05-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shagun751.github.io/</loc>
+    <lastmod>2022-05-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shagun751.github.io/tags/</loc>
+    <lastmod>2022-05-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shagun751.github.io/project/free-falling-external/</loc>
+    <lastmod>2022-05-21T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://shagun751.github.io/authors/</loc>
     <lastmod>2021-03-30T00:00:00+00:00</lastmod>
   </url><url>
@@ -45,12 +69,6 @@
     <lastmod>2021-03-06T19:56:40+05:30</lastmod>
   </url><url>
     <loc>https://shagun751.github.io/authors/shagun-agarwal/</loc>
-    <lastmod>2021-03-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://shagun751.github.io/</loc>
-    <lastmod>2021-03-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://shagun751.github.io/tags/</loc>
     <lastmod>2021-03-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://shagun751.github.io/authors/v.-sriram/</loc>
@@ -80,9 +98,6 @@
     <loc>https://shagun751.github.io/tags/arduino/</loc>
     <lastmod>2021-03-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://shagun751.github.io/project/</loc>
-    <lastmod>2021-03-06T19:56:40+05:30</lastmod>
-  </url><url>
     <loc>https://shagun751.github.io/tags/prototype/</loc>
     <lastmod>2021-03-06T00:00:00+00:00</lastmod>
   </url><url>
@@ -95,10 +110,22 @@
     <loc>https://shagun751.github.io/project/rover/</loc>
     <lastmod>2021-03-06T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://shagun751.github.io/privacy/</loc>
+    <lastmod>2021-03-06T19:56:40+05:30</lastmod>
+  </url><url>
     <loc>https://shagun751.github.io/project/bsnq-base/</loc>
     <lastmod>2021-03-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://shagun751.github.io/tags/fem/</loc>
+    <loc>https://shagun751.github.io/tags/cyclone/</loc>
+    <lastmod>2021-03-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shagun751.github.io/tags/gpu/</loc>
+    <lastmod>2021-03-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shagun751.github.io/tags/hybrid/</loc>
+    <lastmod>2021-03-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shagun751.github.io/project/bqml-base/</loc>
     <lastmod>2021-03-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://shagun751.github.io/tags/meshless/</loc>
@@ -107,7 +134,7 @@
     <loc>https://shagun751.github.io/project/mlpg-base/</loc>
     <lastmod>2021-03-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://shagun751.github.io/tags/numerical/</loc>
+    <loc>https://shagun751.github.io/project/swe9n-base/</loc>
     <lastmod>2021-03-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://shagun751.github.io/post/jupyter/</loc>
@@ -141,9 +168,6 @@
     <lastmod>2018-10-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://shagun751.github.io/tags/demo/</loc>
-    <lastmod>2021-03-06T19:56:40+05:30</lastmod>
-  </url><url>
-    <loc>https://shagun751.github.io/project/external-project/</loc>
     <lastmod>2021-03-06T19:56:40+05:30</lastmod>
   </url><url>
     <loc>https://shagun751.github.io/project/internal-project/</loc>
