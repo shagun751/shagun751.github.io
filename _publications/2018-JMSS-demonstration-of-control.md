@@ -17,15 +17,15 @@ citation: '<b>Agarwal, S.</b>, Jhunjhunwala, T., Saikiran, N., Rajagopal, P. (20
 This article presents a cost efficient semi-autonomous remotely operated underwater vehicle for inspecting water-submerged pipeline networks using circumferential guided ultrasonic waves. Robot navigation is implemented using inertial measurement unit and pressure sensor, with motion control achieved through proportional–integral–differential controller specially tuned to take angled turns. The robot is equipped with pneumatic grippers for clamping on-to a pipe and uses thrusters to move along its length. The paper describes the electronics and control design of this mechanism and presents results from practical experimental trials and ultrasonic measurements.
 
 <iframe width="560" height="315" 
-        src="https://youtu.be/fRpp4Y5Z-fw" 
+        src="https://www.youtube.com/embed/fRpp4Y5Z-fw"        
         title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         allowfullscreen>
 </iframe>
 
+---
+
 <iframe width="560" height="315" 
-        src="https://youtu.be/HxKO0T91lI4" 
+        src="https://www.youtube.com/embed/HxKO0T91lI4"        
         title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         allowfullscreen>
 </iframe>
