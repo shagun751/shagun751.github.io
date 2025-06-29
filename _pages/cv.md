@@ -11,9 +11,9 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* PhD in Ocean Engineering<br> 2022, _IIT Madras_, Chennai, India
+* M.Tech. in Applied Mechanics<br> 2017, _IIT Madras_, Chennai, India
+* B.Tech. in Naval Architecture and Ocean Engineering <br> 2017, _IIT Madras_, Chennai, India
 
 Work experience
 ======
@@ -34,24 +34,25 @@ Work experience
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
 
-Publications
+* **Programming**: FORTRAN (Advanced), C/C++ (Moderate), Julia (Moderate), OpenMP (Advanced), Python (Moderate), OpenACC (Moderate), MPI (Basic)
+* **Numerical methods**: Finite Element (Advanced), Meshless (Advanced), Finite Difference (Moderate)
+* **Simulation**: ANSYS Fluent (Moderate), STAR-CCM+ (Moderate), OpenFOAM (Moderate)
+* **Analysis and Presentation**: MATLAB (Moderate), Mathematica (Moderate), Paraview (Moderate), Tecplot (Basic), Inkscape (Moderate)
+* **Others**: LaTeX (Advanced), MS Office (Moderate), git (Moderate), AutoCAD (Basic)
+
+Journal Publications
 ======
-  <ul>{% for post in site.publications reversed %}
+  <ol reversed>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  {% endfor %}</ol>
+  
   
 Talks
 ======
-  <ul>{% for post in site.talks reversed %}
+  <ol reversed>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
+  {% endfor %}</ol>
   
 Teaching
 ======
@@ -59,6 +60,3 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
-======
-* Currently signed in to 43 different slack teams

@@ -4,7 +4,7 @@ collection: publications
 category: manuscripts
 permalink: /publication/2021-CnF-improvements-in-mlpg
 excerpt: '<i>Scientific contribution</i>: 3D meshless local Petrov-Galerkin methods for viscous free-surface flow. Presents algorithms for semi-analytical local domain integration, 3D free-surface particle identification, moving side- wall and particle redistribution techniques. Validated with experiments on focusing wave impact on monopile.'
-date: 2021-03-01
+date: 2021-03-30
 venue: 'Computers and Fluids'
 #slidesurl: ''
 paperurl: 'https://www.researchgate.net/publication/348052461_Improvements_in_MLPG_formulation_for_3D_wave_interaction_with_fixed_structures'
