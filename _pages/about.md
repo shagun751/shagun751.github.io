@@ -10,3 +10,10 @@ redirect_from:
 Hello! My name is Shagun Agarwal. I am a Postdoctoral researcher at the [Computational Multiphysics in Offshore Engineering](https://cmoe.notion.site/) group at [Delft University of Technology](https://www.tudelft.nl/citg). My research focuses on Computational Physics, Ocean Engineering and Coastal Engineering. 
 
 I use this website for compiling my academic works.
+
+## Research Interests
+
+| Finite element method | Meshless methods (SPH, MLPG) | Numerical modelling |
+| Hydro-visco-elastic interactions | Fluid-structure interaction | Coastal hydrodynamics |
+| Floating wind turbines | Offshore photovoltaics | Mooring systems | 
+| Underwater robotics | Storm-surge modelling | Ship-generated waves | 
