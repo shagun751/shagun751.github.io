@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Meshless on Shagun Agarwal</title>
+    <link>https://shagun751.github.io/tags/meshless/</link>
+    <description>Recent content in Meshless on Shagun Agarwal</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; {year}</copyright>
+    <lastBuildDate>Thu, 04 Mar 2021 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://shagun751.github.io/tags/meshless/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hybrid Boussinesq-MLPG model</title>
+      <link>https://shagun751.github.io/project/bqml-base/</link>
+      <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://shagun751.github.io/project/bqml-base/</guid>
+      <description>
+
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;../../img/project_bqml_base_test.gif&#34; &gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;&lt;strong&gt;Figure:&lt;/strong&gt; Simulation of coupling for wave generation in 3D-particle based model using input from 2DH mesh-based model.&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Navier-Stokes-MLPG for 3D free-surface flows</title>
+      <link>https://shagun751.github.io/project/mlpg-base/</link>
+      <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://shagun751.github.io/project/mlpg-base/</guid>
+      <description>
+
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;../../img/project_mlpg_base_3D.gif&#34; &gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;&lt;strong&gt;Figure:&lt;/strong&gt; Focusing wave impact on vertical cylinder simulated using 3D particle-based model for free-surface flows.&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

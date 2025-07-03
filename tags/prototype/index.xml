@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Prototype on Shagun Agarwal</title>
+    <link>https://shagun751.github.io/tags/prototype/</link>
+    <description>Recent content in Prototype on Shagun Agarwal</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; {year}</copyright>
+    <lastBuildDate>Sat, 06 Mar 2021 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://shagun751.github.io/tags/prototype/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Underwater rover</title>
+      <link>https://shagun751.github.io/project/rover/</link>
+      <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://shagun751.github.io/project/rover/</guid>
+      <description>
+
+
+
+
+
+&lt;figure&gt;
+
+&lt;img src=&#34;./featured.jpg&#34; &gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;&lt;strong&gt;Figure:&lt;/strong&gt; Snapshot showing the essential design features of the under rover prototype.&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/fRpp4Y5Z-fw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;Video showing the defect detection&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
