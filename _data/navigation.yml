@@ -23,8 +23,8 @@ main:
   # - title: "Portfolio"
   #   url: /portfolio/
 
-  - title: "Research@IITM"
-    url: /researchiitm/
+  # - title: "Research@IITM"
+    # url: /researchiitm/
         
   # - title: "Blog Posts"
   #   url: /year-archive/

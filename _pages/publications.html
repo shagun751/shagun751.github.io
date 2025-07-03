@@ -57,8 +57,9 @@ author_profile: true
           {% if post.directurl %}<a href="{{ post.directurl }}" target="_blank" title="Published Link"><span class="icon">🔗</span></a>{% endif %}
           {% if post.paperurl %}<a href="{{ post.paperurl }}" target="_blank" title="Download PDF"><span class="icon">📄</span></a>{% endif %}
         </span>
-        {% if post.excerpt %}<br>{{ post.excerpt }}{% endif %}        
+        {% if post.excerpt %}<br>{{ post.excerpt }}{% endif %}
       </li>
+      <br>
     {% endfor %}
     {% if title_shown %}
       </ol>

@@ -13,7 +13,30 @@ I use this website for compiling my academic works.
 
 ## Research Interests
 
-| Finite element method | Meshless methods (SPH, MLPG) | Numerical modelling |
-| Hydro-visco-elastic interactions | Fluid-structure interaction | Coastal hydrodynamics |
-| Floating wind turbines | Offshore photovoltaics | Mooring systems | 
-| Underwater robotics | Storm-surge modelling | Ship-generated waves | 
+<div style="display: flex; gap: 40px;">
+
+  <div style="flex: 1;">
+    <ul>
+      <li>Finite Element Method</li>
+      <li>Meshless Methods (MLPG, SPH)</li>
+      <li>Computational Fluid Dynamics</li>
+      <li>Hydro-elastic Fluid-Structure Interaction</li>    
+      <li>Coastal Hydrodynamics</li>
+      <li>Underwater Robotics</li>
+    </ul>
+  </div>
+
+  <div style="flex: 1;">
+    <ul>
+      <li>Floating Wind Turbines</li>
+      <li>Offshore Photovoltaics</li>
+      <li>Large Floaing Structures</li>
+      <li>Mooring Systems with Synthetic Lines</li>       
+      <li>Storm Surge Modelling</li>
+      <li>Ship-generated Waves</li>
+    </ul>
+  </div>
+
+</div>
+
+
