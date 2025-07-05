@@ -43,10 +43,12 @@ Skills
 
 Journal Publications
 ======
-  <ol reversed>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ol>
-  
+  <ol reversed>
+  {% for post in site.publications reversed %}
+    {% if post.categories contains "manuscripts" %}
+      {% include archive-single-cv.html %}
+    {% endif %}
+  {% endfor %}</ol>  
   
 Talks
 ======
