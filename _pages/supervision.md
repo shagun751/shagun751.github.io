@@ -8,8 +8,8 @@ author_profile: true
 
 ## Master Thesis - TU Delft
 
-1. Chen Liang (ongoing). 
-1. Kevin Kevin Jonathan (ongoing). Neural Enhancement of Schapery-Prony Viscoelastic Theory
+1. Chen Liang (ongoing). Locally resonant metamaterials as wave-energy converters
+1. Kevin Kevin Jonathan (2025). [Neural Enhancement of Schapery-Prony Viscoelastic Theory](https://resolver.tudelft.nl/uuid:3d941e9a-97f0-47f6-b1f6-184e8de21a41)
 1. Rafael R. Rutgers (2025). [Surrogate Deep Learning Models for response of Very Large Floating Structures](https://resolver.tudelft.nl/uuid:add9669d-9bbc-4c08-b65c-2766f5f5c081)
 1. Hidde Drost (2025). [Wave run-up on monopiles](https://resolver.tudelft.nl/uuid:edadfaaa-6970-45ec-b599-16f52b027862)
 1. Kareem El Sayed (2024). [Control of Flexible Floating Islands](https://resolver.tudelft.nl/uuid:b5ac6396-aff4-4cb9-84f5-bb761703f483)
