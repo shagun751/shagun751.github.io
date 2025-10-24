@@ -5,11 +5,11 @@ category: manuscripts
 permalink: /publication/J2025-APOR-gaussian-coupla
 excerpt: '<i>Scientific Impact</i>: A statistical method for linking the snap loads in catenary line with the incoming sea-state.<br><i>My contribution</i>: Developed the underlying geometrically nonlinear mooring line model. Conducted simulations of catenary lines at 10 water-depths with 300 irregular sea-states each.'
 date: 2025-10-10
-# venue: 'Applied Ocean Research'
+venue: 'Applied Ocean Research'
 #slidesurl: ''
-paperurl: '[http://dx.doi.org/10.2139/ssrn.5131622](https://www.researchgate.net/publication/396522334_Gaussian_copula-based_Bayesian_Networks_for_dynamic_loads_in_mooring_systems)'
+paperurl: 'https://www.researchgate.net/publication/396522334_Gaussian_copula-based_Bayesian_Networks_for_dynamic_loads_in_mooring_systems'
 #bibtexurl: ''
-directurl: '[http://dx.doi.org/10.2139/ssrn.5131622](https://doi.org/10.1016/j.apor.2025.104809)'
+directurl: 'https://doi.org/10.1016/j.apor.2025.104809'
 authors: 'Santjer, R., <b>Agarwal, S.</b>, Colomés, O., Morales-Napoles, O.'
 citation: 'Santjer, R., <b>Agarwal, S.</b>, Colomés, O., Morales-Napoles, O. Gaussian Copula-Based Bayesian Networks for Dynamic Loads in Mooring Systems. Applied Ocean Research 165, 104809.'
 ---
