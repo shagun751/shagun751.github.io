@@ -3,7 +3,7 @@ title: "Gaussian Copula-Based Bayesian Networks for Dynamic Loads in Mooring Sys
 collection: publications
 category: manuscripts
 permalink: /publication/J2025-APOR-gaussian-coupla
-excerpt: '<i>Scientific Impact</i>: A statistical method for linking the snap loads in catenary line with the incoming sea-state.<br><i>My contribution</i>: Developed the underlying geometrically nonlinear mooring line model. Conducted simulations of catenary lines at 10 water-depths with 300 irregular sea-states each. <br><i>My contribution</i>: Developed the underlying FEM-based geometrically nonlinear mooring line model. Conducted simulations of catenary lines at 10 water-depths with 300 irregular sea-states each.'
+excerpt: '<i>Scientific Impact</i>: A statistical method for linking the snap loads in catenary line with the incoming sea-state. <br><i>My contribution</i>: Developed the underlying FEM-based geometrically nonlinear mooring line model. Conducted simulations of catenary lines at 10 water-depths with 300 irregular sea-states each.'
 date: 2025-10-10
 venue: 'Applied Ocean Research'
 #slidesurl: ''
