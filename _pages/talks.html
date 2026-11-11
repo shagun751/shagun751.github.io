@@ -26,7 +26,7 @@ redirect_from:
   <li class="talk">
     <span class="talk__date">{{ talk.date | date: "%b" }}</span>
     <div class="talk__body">
-      <div class="talk__meta">{{ talk.venue }}{% if talk.location %} · {{ talk.location }}{% endif %}</div>
+      <div class="talk__meta">{% if talk.type %}<span class="talk__tag">{{ talk.type }}</span> {% endif %}{{ talk.venue }}{% if talk.location %} · {{ talk.location }}{% endif %}</div>
       <div class="talk__title">{{ talk.title }}</div>
       {% if talk.paperurl %}<a class="talk__link" href="{{ talk.paperurl }}">Paper</a>{% endif %}
     </div>
@@ -47,15 +47,12 @@ redirect_from:
     if (!el || typeof L === 'undefined' || talks.length === 0) { if (el) el.style.display = 'none'; return; }
 
     var map = L.map(el, { scrollWheelZoom: false, worldCopyJump: true });
-    var attribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>';
-    function tilesFor(theme) {
-      var style = theme === 'dark' ? 'dark_all' : 'light_all';
-      return L.tileLayer('https://{s}.basemaps.cartocdn.com/' + style + '/{z}/{x}/{y}{r}.png', { attribution: attribution, subdomains: 'abcd', maxZoom: 19 });
-    }
-    var currentTheme = document.documentElement.getAttribute('data-theme');
-    var tiles = tilesFor(currentTheme).addTo(map);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      maxZoom: 19
+    }).addTo(map);
 
-    // One marker per location; several talks in the same city share a popup.
+    /* One marker per location; several talks in the same city share a popup. */
     var byPlace = {};
     talks.forEach(function (t) {
       var key = t.lat + ',' + t.lon;
@@ -74,13 +71,5 @@ redirect_from:
     });
     map.fitBounds(points, { padding: [30, 30], maxZoom: 5 });
 
-    // Follow the site's light/dark toggle.
-    new MutationObserver(function () {
-      var theme = document.documentElement.getAttribute('data-theme');
-      if (theme === currentTheme) return;
-      currentTheme = theme;
-      map.removeLayer(tiles);
-      tiles = tilesFor(theme).addTo(map);
-    }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
   })();
 </script>
