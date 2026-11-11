@@ -5,8 +5,15 @@ permalink: /teaching/
 author_profile: true
 ---
 
-{% include base_path %}
-
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+{% assign courses = site.teaching | sort: "date" | reverse %}
+<ul class="talk-list">
+  {% for course in courses %}
+  <li class="talk">
+    <div class="talk__body">
+      <div class="talk__meta">{{ course.type }} · {{ course.venue }}</div>
+      <div class="talk__title"><a href="{{ course.url }}">{{ course.title }}</a></div>
+      <div class="talk__meta">{{ course.period }}</div>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
