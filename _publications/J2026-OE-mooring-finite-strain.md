@@ -9,7 +9,7 @@ excerpt: '<i>Scientific Impact</i>: FEM model for catenary and taut mooring line
 date: 2026-08-06
 venue: 'Ocean Engineering'
 #slidesurl: ''
-paperurl: 'https://repository.tudelft.nl/record/uuid:b4c669f5-6d0f-466f-9069-4dfb28766bce'
+paperurl: 'https://www.researchgate.net/publication/411851332_Nonlinear_dynamic_response_of_mooring_cables_based_on_finite-strain_theory_Finite_element_and_reduced-order_models'
 #bibtexurl: ''
 directurl: 'https://doi.org/10.1016/j.oceaneng.2026.127337'
 authors: '<b>Agarwal, S.</b>, Gómez, S. S., Colomés, O.'

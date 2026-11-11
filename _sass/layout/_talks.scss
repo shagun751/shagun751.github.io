@@ -1,0 +1,69 @@
+/* ==========================================================================
+   TALKS PAGE (map + compact timeline)
+   ========================================================================== */
+
+.talk-map {
+  height: 340px;
+  margin: 0.5em 0 1.5em;
+  border: 1px solid var(--global-border-color);
+  border-radius: 6px;
+  z-index: 0;
+
+  .leaflet-popup-content {
+    font-size: 0.8em;
+    line-height: 1.4;
+  }
+}
+
+.talk-year {
+  margin: 1.5em 0 0.25em;
+  padding-bottom: 0.25em;
+  font-size: 1.1em;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.talk-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.talk {
+  display: flex;
+  gap: 1em;
+  margin: 0;
+  padding: 0.6em 0;
+
+  & + .talk {
+    border-top: 1px dashed var(--global-border-color);
+  }
+}
+
+.talk__date {
+  flex: 0 0 2.5em;
+  padding-top: 0.2em;
+  color: var(--global-text-color-light);
+  font-size: 0.8em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.talk__meta {
+  color: var(--global-text-color-light);
+  font-size: 0.8em;
+}
+
+.talk__title {
+  font-size: 0.95em;
+  line-height: 1.4;
+}
+
+.talk__link {
+  display: inline-block;
+  margin-top: 0.3em;
+  padding: 0 0.45em;
+  font-size: 0.75em;
+  text-decoration: none;
+  border: 1px solid var(--global-link-color);
+  border-radius: 3px;
+}

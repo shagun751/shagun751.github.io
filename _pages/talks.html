@@ -3,14 +3,84 @@ layout: archive
 title: "Talks and presentations"
 permalink: /talks/
 author_profile: true
+redirect_from:
+  - /talkmap.html
+  - /talks/2018-02-18
+  - /talks/2019-06-09
+  - /talks/2023-06-27
+  - /talks/2023-07-02
+  - /talks/2024-07-21
+  - /talks/2025-06-05
 ---
 
-{% if site.talkmap_link == true %}
+{% assign talks_sorted = site.talks | sort: "date" | reverse %}
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+<div id="talk-map" class="talk-map" role="img" aria-label="Map of talk locations"></div>
 
-{% endif %}
-
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
+{% assign talks_by_year = talks_sorted | group_by_exp: "talk", "talk.date | date: '%Y'" %}
+{% for year in talks_by_year %}
+<h2 class="talk-year">{{ year.name }}</h2>
+<ul class="talk-list">
+  {% for talk in year.items %}
+  <li class="talk">
+    <span class="talk__date">{{ talk.date | date: "%b" }}</span>
+    <div class="talk__body">
+      <div class="talk__meta">{{ talk.venue }}{% if talk.location %} · {{ talk.location }}{% endif %}</div>
+      <div class="talk__title">{{ talk.title }}</div>
+      {% if talk.paperurl %}<a class="talk__link" href="{{ talk.paperurl }}">Paper</a>{% endif %}
+    </div>
+  </li>
+  {% endfor %}
+</ul>
 {% endfor %}
+
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script>
+  (function () {
+    var talks = [
+      {% for talk in talks_sorted %}{% if talk.lat and talk.lon %}
+      { lat: {{ talk.lat }}, lon: {{ talk.lon }}, venue: {{ talk.venue | jsonify }}, location: {{ talk.location | jsonify }}, title: {{ talk.title | jsonify }} },
+      {% endif %}{% endfor %}
+    ];
+    var el = document.getElementById('talk-map');
+    if (!el || typeof L === 'undefined' || talks.length === 0) { if (el) el.style.display = 'none'; return; }
+
+    var map = L.map(el, { scrollWheelZoom: false, worldCopyJump: true });
+    var attribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>';
+    function tilesFor(theme) {
+      var style = theme === 'dark' ? 'dark_all' : 'light_all';
+      return L.tileLayer('https://{s}.basemaps.cartocdn.com/' + style + '/{z}/{x}/{y}{r}.png', { attribution: attribution, subdomains: 'abcd', maxZoom: 19 });
+    }
+    var currentTheme = document.documentElement.getAttribute('data-theme');
+    var tiles = tilesFor(currentTheme).addTo(map);
+
+    // One marker per location; several talks in the same city share a popup.
+    var byPlace = {};
+    talks.forEach(function (t) {
+      var key = t.lat + ',' + t.lon;
+      (byPlace[key] = byPlace[key] || { lat: t.lat, lon: t.lon, location: t.location, items: [] }).items.push(t);
+    });
+    var linkColor = getComputedStyle(document.documentElement).getPropertyValue('--global-link-color').trim() || '#52adc8';
+    var points = [];
+    Object.keys(byPlace).forEach(function (k) {
+      var p = byPlace[k];
+      var html = '<strong>' + p.location + '</strong>' + p.items.map(function (t) {
+        return '<br>' + t.venue + ': ' + t.title;
+      }).join('');
+      L.circleMarker([p.lat, p.lon], { radius: 6 + 2 * (p.items.length - 1), color: linkColor, fillColor: linkColor, fillOpacity: 0.8, weight: 1 })
+        .bindPopup(html).addTo(map);
+      points.push([p.lat, p.lon]);
+    });
+    map.fitBounds(points, { padding: [30, 30], maxZoom: 5 });
+
+    // Follow the site's light/dark toggle.
+    new MutationObserver(function () {
+      var theme = document.documentElement.getAttribute('data-theme');
+      if (theme === currentTheme) return;
+      currentTheme = theme;
+      map.removeLayer(tiles);
+      tiles = tilesFor(theme).addTo(map);
+    }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+  })();
+</script>
