@@ -11,78 +11,53 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-<!-- {% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %} -->
-
-
-{% if site.publication_category %}
-  {% for category in site.publication_category %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        <ol reversed class="publication-list">
-        {% assign title_shown = true %}
-      {% endunless %}
-      <li>
-        <strong>{{ post.title }}</strong><br>
-        <span>
-          {% if post.date %}{{ post.date | date: "%Y" }}. {% endif %}
-          {% if post.venue %}<em>{{ post.venue }}</em>. {% endif %}
-          {% if post.authors %}<br>{{ post.authors }} {% endif %}
-        </span><br>        
-        <span>
-          {% if post.url %}<a href="{{ post.url }}" target="_blank" title="More Info"><span class="icon">ℹ️</span></a>{% endif %}
-          {% if post.directurl %}<a href="{{ post.directurl }}" target="_blank" title="Published Link"><span class="icon">🔗</span></a>{% endif %}
-          {% if post.paperurl %}<a href="{{ post.paperurl }}" target="_blank" title="Download PDF"><span class="icon">📄</span></a>{% endif %}
-        </span>
-        {% if post.excerpt %}<br>{{ post.excerpt }}{% endif %}
-      </li>
-      <br>
-    {% endfor %}
-    {% if title_shown %}
-      </ol>
-    {% endif %}
-  {% endfor %}
-{% else %}
-  <ul class="publication-list">
-    {% for post in site.publications reversed %}
-      <li>
-        <strong>{{ post.title }}</strong><br>
-        {% if post.authors %}{{ post.authors }}. {% endif %}
-        {% if post.journal %}<em>{{ post.journal }}</em>, {% endif %}
-        {% if post.year %}{{ post.year }}. {% endif %}
-        {% if post.doi %}
-          <a href="https://doi.org/{{ post.doi }}" target="_blank">[DOI]</a>
-        {% endif %}
-        {% if post.url %}
-          <a href="{{ post.url }}" target="_blank">[PDF]</a>
-        {% endif %}
+{% assign pubs = site.publications | sort: "date" | reverse %}
+{% for category in site.publication_category %}
+  {% assign in_cat = pubs | where: "category", category[0] %}
+  {% if in_cat.size > 0 %}
+  <h2>{{ category[1].title }}</h2>
+  <ol class="pub-list" reversed>
+    {% for post in in_cat %}
+      {% assign fname = post.path | split: "/" | last | remove: ".md" %}
+      {% assign first_par = post.content | split: "</p>" | first | strip %}
+      {% assign impact = post.excerpt | strip_html | strip %}
+      <li class="pub">
+        <span class="pub__num">{{ in_cat.size | minus: forloop.index0 }}.</span>
+        <div class="pub__aside">
+          {% if post.preview %}
+            <a href="{{ base_path }}{{ post.preview }}" class="image-popup pub__preview" title="{{ post.title | strip_html | escape }}"><img src="{{ base_path }}{{ post.preview }}" alt="Figure from: {{ post.title | strip_html | escape }}" loading="lazy"></a>
+          {% endif %}
+        </div>
+        <div class="pub__body">
+          <div class="pub__title"><a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a></div>
+          {% if post.authors %}<div class="pub__authors">{{ post.authors }}</div>{% endif %}
+          <div class="pub__venue">{% if post.venue %}<em>{{ post.venue }}</em>, {% endif %}{{ post.date | date: "%Y" }}</div>
+          <div class="pub__links">
+            {% if first_par contains "<p>" %}<button type="button" class="pub__btn" data-toggle="abs-{{ fname }}" aria-expanded="false">Abstract</button>{% endif %}
+            {% if impact != "" %}<button type="button" class="pub__btn" data-toggle="imp-{{ fname }}" aria-expanded="false">Impact</button>{% endif %}
+            {% if post.directurl %}<a class="pub__btn" href="{{ post.directurl }}">DOI</a>{% endif %}
+            {% if post.paperurl %}<a class="pub__btn" href="{{ post.paperurl }}">Full text</a>{% endif %}
+            <a class="pub__btn" href="{{ base_path }}{{ post.url }}">Details</a>
+          </div>
+          {% if first_par contains "<p>" %}<div class="pub__panel" id="abs-{{ fname }}" hidden>{{ first_par }}</p></div>{% endif %}
+          {% if impact != "" %}<div class="pub__panel" id="imp-{{ fname }}" hidden><p>{{ post.excerpt }}</p></div>{% endif %}
+        </div>
       </li>
     {% endfor %}
-  </ul>
-{% endif %}
+  </ol>
+  {% endif %}
+{% endfor %}
 
-
-
+<script>
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest('.pub__btn[data-toggle]');
+    if (!btn) { return; }
+    var panel = document.getElementById(btn.getAttribute('data-toggle'));
+    if (!panel) { return; }
+    var opening = panel.hasAttribute('hidden');
+    var body = btn.closest('.pub__body');
+    body.querySelectorAll('.pub__panel').forEach(function (p) { p.setAttribute('hidden', ''); });
+    body.querySelectorAll('.pub__btn[data-toggle]').forEach(function (b) { b.classList.remove('is-active'); b.setAttribute('aria-expanded', 'false'); });
+    if (opening) { panel.removeAttribute('hidden'); btn.classList.add('is-active'); btn.setAttribute('aria-expanded', 'true'); }
+  });
+</script>

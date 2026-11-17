@@ -5,7 +5,7 @@ category: manuscripts
 permalink: /publication/J2026-SMO-optimisation-membrane
 excerpt: '<i>Scientific Impact</i>: Insights into the properties such as mass, pre-tension and material damping of viscoelastic floating membranes, optimised for absorbing / dissipating the maximum wave energy through hydro-visco-elastic response.<br><i>My contribution</i>: Developed the underlying FEM model. Guided the systematic analysis of the optimisation problem.'
 date: 2026-02-26
-# venue: 'Journal of Fluids and Structures'
+venue: 'Structural and Multidisciplinary Optimization'
 #slidesurl: ''
 paperurl: 'https://www.researchgate.net/publication/401260919_Adjoint-based_PDE-constrained_optimization_of_viscoelastic_floating_membrane_for_maximum_wave_power_absorption_Adjoint-based_PDE-constrained_optimization_of_viscoelasticK_El_Sayed_et_al'
 #bibtexurl: ''
