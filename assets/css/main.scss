@@ -8,6 +8,9 @@
    sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
  */
 
+/* Dark palette chosen in _config.yml (dark_theme) */
+$dark-palette: {{ site.dark_theme | default: "charcoal" }};
+
 @import
     "vendor/breakpoint/breakpoint",
 

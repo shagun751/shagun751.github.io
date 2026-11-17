@@ -8,13 +8,76 @@ $dark-gray                  : mix(#000, $gray, 40%);
 $darker-gray                : mix(#000, $gray, 60%);
 $light-gray                 : mix(#fff, $gray, 50%);
 
-$background                 : #474747;
+/* Dark palettes. Pick one with `dark_theme:` in _config.yml (default: charcoal).
+   grey = original AcademicPages dark theme, charcoal = neutral GitHub-like,
+   ocean = navy with teal links, warm = soft warm dark with amber links,
+   dark-modern = VS Code "Dark Modern" colours. */
+$dark-palettes: (
+  grey: (
+    background   : #474747,
+    text         : #ffffff,
+    link         : #0ea1c5,
+    muted        : mix(#fff, $gray, 50%),
+    border       : mix(#fff, $gray, 50%),
+    raised       : #5a5a5a,
+    masthead-hover: mix(#fff, #474747, 80%)
+  ),
+  charcoal: (
+    background   : #1e1f22,
+    text         : #e6e6e6,
+    link         : #6cb6ff,
+    muted        : #9aa0a6,
+    border       : #3a3d42,
+    raised       : #2a2c30,
+    masthead-hover: #ffffff
+  ),
+  ocean: (
+    background   : #0f1b2a,
+    text         : #e3e9f0,
+    link         : #4fc3d9,
+    muted        : #8fa3b8,
+    border       : #23364d,
+    raised       : #172638,
+    masthead-hover: #ffffff
+  ),
+  warm: (
+    background   : #1f1d1a,
+    text         : #ece6dc,
+    link         : #e0a458,
+    muted        : #a59d90,
+    border       : #3a352e,
+    raised       : #2a2723,
+    masthead-hover: #ffffff
+  ),
+  dark-modern: (
+    background   : #1f1f1f,
+    text         : #cccccc,
+    link         : #4daafc,
+    muted        : #9d9d9d,
+    border       : #3c3c3c,
+    raised       : #2b2b2b,
+    masthead-hover: #ffffff
+  )
+);
+
+$dark-palette               : charcoal !default;
+$dark                       : map-get($dark-palettes, $dark-palette);
+@if $dark == null {
+  @warn "Unknown dark_theme '#{$dark-palette}', falling back to charcoal.";
+  $dark: map-get($dark-palettes, charcoal) !global;
+}
+
+$background                 : map-get($dark, background);
 $background-light           : mix(#fff, $background, 80%);
 $background-lighter         : mix(#fff, $background, 90%);
-$text                       : #ffffff;
-$link                       : #0ea1c5;
+$text                       : map-get($dark, text);
+$link                       : map-get($dark, link);
 $link-dark                  : mix(#000, $link, 25%);
 $link-light                 : mix(#fff, $link, 25%);
+$dark-muted                 : map-get($dark, muted);
+$dark-border                : map-get($dark, border);
+$dark-raised                : map-get($dark, raised);
+$dark-masthead-hover        : map-get($dark, masthead-hover);
 
 /* Color codes used for the site */
 $danger-color               : #ee5f5b;
@@ -38,17 +101,17 @@ html[data-theme="dark"] {
     --global-base-color                 : #{$background};
     --global-bg-color                   : #{$background};
     --global-footer-bg-color            : #{$background};
-    --global-border-color               : #{$light-gray};
-    --global-dark-border-color          : #{$background-light};
+    --global-border-color               : #{$dark-border};
+    --global-dark-border-color          : #{$dark-border};
     --global-code-background-color      : #fafafa;
     --global-code-text-color            : #{$darker-gray};
-    --global-fig-caption-color          : #{$light-gray};
+    --global-fig-caption-color          : #{$dark-muted};
     --global-link-color                 : #{$link};
     --global-link-color-hover           : #{$link-dark};
     --global-link-color-visited         : #{$link-light};
     --global-masthead-link-color        : #{$text};
-    --global-masthead-link-color-hover  : #{$background-light};
+    --global-masthead-link-color-hover  : #{$dark-masthead-hover};
     --global-text-color                 : #{$text};
-    --global-text-color-light           : #{$light-gray};
-    --global-thead-color                : #{$background-lighter};
+    --global-text-color-light           : #{$dark-muted};
+    --global-thead-color                : #{$dark-raised};
 }

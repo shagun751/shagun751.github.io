@@ -98,7 +98,7 @@
 
   &:hover,
   &.is-active {
-    color: #fff;
+    color: var(--global-bg-color);
     text-decoration: none;
     background: var(--global-link-color);
   }
