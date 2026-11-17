@@ -20,3 +20,7 @@ As climate change becomes more critical and renewable energy sources expand, lan
 | Schematic of the floating photovoltaic platform studied in the manuscript |
 | --- |
 | ![Schematic of FPV](../files/fpv_schematic.png) |
+
+| Schematic of the solution procedure for the multi-physics problem |
+| --- |
+| ![Schematic of FPV](../files/J2025-EGY-floating-solar/schematic.png) |
